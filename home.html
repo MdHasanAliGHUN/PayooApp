@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PROJECT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center items-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <!-- Available Balance -->
+                    <div class="stats shadow">
+                        <div class="stat">
+                            <div id="currentBalance" class="stat-value">400</div>
+                            <div class="stat-desc">Available Balance</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- user action button -->
+                     <div>
+                        <button id="addMonyShowButton" class="btn btn-lg">Add Many</button>
+                        <button id="wothdrawMonyShowButton" class="btn btn-lg">Cash Out</button>
+                     </div>
+                     <!-- Add many form zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+                     <div class="divider"></div>
+                     <div id="addMonyForm" class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="addMonyInput" type="text" placeholder="Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input type="password" id="pinNumbetForAddingMony" placeholder="Entert PIN" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="buttonAddMony" class="btn btn-primary">Add Many</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- Cash many form zzzzzzzzzzzzzzzzzzzzzzzzzz-->
+                     <div id="cashOutForm" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form  class=" card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="withdrawMonyInput" type="text" placeholder="Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input type="password" id="pinNumbetForWithdrawMony" placeholder="Entert PIN" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="buttonWithdrawMony" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                     
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/home.js"></script>
+    <script src="w.js"></script>
+    <script src="f.js"></script>
+</body>
+</html>
